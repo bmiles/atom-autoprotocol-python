@@ -6,7 +6,7 @@
     "language",
     "grammar"
   ],
-  "repository": "https://github.com/atom/atom-autoprotocol-python",
+  "repository": "https://github.com/bmiles/atom-autoprotocol-python.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
