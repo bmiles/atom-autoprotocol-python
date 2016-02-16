@@ -1,0 +1,14 @@
+{
+  "name": "autoprotocol-python",
+  "version": "0.0.1",
+  "description": "Snippets for generating Autoprotocol-python.",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/atom/atom-autoprotocol-python",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

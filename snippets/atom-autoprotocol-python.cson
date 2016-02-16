@@ -1,0 +1,161 @@
+# If you want some example snippets, check out:
+# https://github.com/atom/language-gfm/blob/master/snippets/gfm.cson
+
+'.source.python':
+  'absorbance':
+    'prefix': 'absorbance'
+    'body': 'absorbance(${1:ref}, ${2:wells}, ${3:wavelength}, ${4:dataref})'
+  'all_wells':
+    'prefix': 'all_wells'
+    'body': 'all_wells()'
+  'as_dict':
+    'prefix': 'as_dict'
+    'body': 'as_dict()'
+
+  'autopick':
+    'prefix': 'autopick'
+    'body': 'autopick(${1:source}, ${2:dests}, ${3:min_count=1})'
+
+  'container_type':
+    'prefix': 'container_type'
+    'body': 'container_type(${1:shortname})'
+
+  'cover':
+    'prefix': 'cover'
+    'body': 'cover(${1:ref})'
+
+  'dispense':
+    'prefix': 'dispense'
+    'body': 'dispense(${1:ref}, "${2:reagent}", [{"column": ${3:0}, "volume": "${4:vol}"},])'
+
+  'dispense_full':
+    'prefix': 'dispense_full_plate'
+    'body': 'dispense_full_plate(${1:ref}, "${2:reagent}", ${3:volume})'
+
+  'distribute':
+    'prefix': 'distribute'
+    'body': 'distribute(${1:source}, ${2:dest}, ${3:volume}, allow_carryover=${4:False})'
+
+  'flow_analyze':
+    'prefix': 'flow_analyze'
+    'body': 'flow_analyze(${1:dataref}, ${2:FSC}, ${3:SSC}, ${4:neg_controls}, ${5:samples})'
+
+  'fluorescence':
+    'prefix': 'fluorescence'
+    'body': 'fluorescence(${1:ref}, [${2:wells}], ${3:excitation}, ${4:emission}, ${5:dataref})'
+
+  'fromstring':
+    'prefix': 'fromstring'
+    'body': 'fromstring(${1:s})'
+
+  'gel_separate':
+    'prefix': 'gel_separate'
+    'body': 'gel_separate(${1:wells}, ${2:volume}, ${3:matrix}, ${4:ladder}, ${5:duration}, ${6:dataref})'
+
+  'humanize':
+    'prefix': 'humanize'
+    'body': 'humanize(${1:well_ref})'
+
+  'image_plate':
+    'prefix': 'image_plate'
+    'body': 'image_plate(${1:ref}, ${2:mode}, ${3:dataref})'
+
+  'incubate':
+    'prefix': 'incubate'
+    'body': 'incubate(${1:ref}, ${2:where}, ${3:duration}, shaking=${4:False}, co2=${5:0})'
+
+  'luminescence':
+    'prefix': 'luminescence'
+    'body': 'luminescence(${1:ref}, ${2:wells}, ${3:dataref})'
+
+  'make_dottable_dict':
+    'prefix': 'make_dottable_dict'
+    'body': 'make_dottable_dict(${1:dict})'
+
+  'mix':
+    'prefix': 'mix'
+    'body': 'mix(${1:well}, ${2:volume}, speed="${3:100:microliter/second}", repetitions=${4:10})'
+
+  'oligosynthesize':
+    'prefix': 'oligosynthesize'
+    'body': 'oligosynthesize(${1:oligos})'
+
+  'plate_off_mag_adapter':
+    'prefix': 'plate_off_mag_adapter'
+    'body': 'plate_off_mag_adapter(${1:ref})'
+
+  'plate_to_mag_adapter':
+    'prefix': 'plate_to_mag_adapter'
+    'body': 'plate_to_mag_adapter(${1:ref}, ${2:duration})'
+
+  'provision':
+    'prefix': 'provision'
+    'body': 'provision(${1:resource_id}, ${2:dests}, ${3:volumes})'
+
+  'quadrant':
+    'prefix': 'quadrant'
+    'body': 'quadrant(${1:quad})'
+
+  'ref':
+    'prefix': 'ref'
+    'body': 'ref(${1:name}, id=${2:None}, cont_type="${3:cont_type}", storage=${4:None}, discard=${5:None})'
+
+  'robotize':
+    'prefix': 'robotize'
+    'body': 'robotize("${1:well_ref}")'
+
+  'sangerseq':
+    'prefix': 'sangerseq'
+    'body': 'sangerseq(${1:container}, [${2:wells}], ${3:dataref})'
+
+  'seal':
+    'prefix': 'seal'
+    'body': 'seal(${1:ref})'
+
+  'serial_dilute_rowwise':
+    'prefix': 'serial_dilute_rowwise'
+    'body': 'serial_dilute_rowwise(${1:source}, ${2:well_group}, ${3:vol})'
+
+  'set_volume':
+    'prefix': 'set_volume'
+    'body': 'set_volume(${1:vol})'
+
+  'spin':
+    'prefix': 'spin'
+    'body': 'spin(${1:ref}, ${2:acceleration}, ${3:duration})'
+
+  'spread':
+    'prefix': 'spread'
+    'body': 'spread(${1:source}, ${2:dest}, ${3:volume})'
+
+  'stamp':
+    'prefix': 'stamp'
+    'body': 'stamp(${1:source}, ${2:dest}, ${3:volume}, quad=${4:None})'
+
+  'thermocycle':
+    'prefix': 'thermocycle'
+    'body': 'thermocycle(${1:ref}, [${2:{\n\t"cycles": 1,\n\t"steps": [{}}]\n\t}],\n\tvolume=${3:volume},\n\tdataref=${4:None},\n\tdyes=${5:None})'
+
+  'thermocycle_ramp':
+    'prefix': 'thermocycle_ramp'
+    'body': 'thermocycle_ramp(${1:ref}, ${2:start_temp}, ${3:end_temp}, ${4:time})'
+
+  'transfer':
+    'prefix': 'transfer'
+    'body': 'transfer(${1:source}, ${2:dest}, ${3:volume})'
+
+  'uncover':
+    'prefix': 'uncover'
+    'body': 'uncover(${1:ref})'
+
+  'unseal':
+    'prefix': 'unseal'
+    'body': 'unseal(${1:ref})'
+
+  'well':
+    'prefix': 'well'
+    'body': 'well(${1:index})'
+
+  'wells_from_all_wells':
+    'prefix': 'wells_from'
+    'body': 'wells_from(${1:start}, ${2:num})'
