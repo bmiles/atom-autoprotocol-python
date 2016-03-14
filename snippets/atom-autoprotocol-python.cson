@@ -78,8 +78,11 @@
 
   'oligosynthesize':
     'prefix': 'oligosynthesize'
-    'body': 'oligosynthesize(${1:oligos})'
-
+    'body': 'oligosynthesize([{"sequence":${1:"CATGGTCCCCTGCACAGG"}, 
+      "destination":${2:oligo_1.well(0)}, 
+      "scale":${3:"25nm"}, 
+      "purification":${4:"standard"}])'
+      
   'plate_off_mag_adapter':
     'prefix': 'plate_off_mag_adapter'
     'body': 'plate_off_mag_adapter(${1:ref})'
