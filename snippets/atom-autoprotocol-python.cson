@@ -72,24 +72,36 @@
     'prefix': 'make_dottable_dict'
     'body': 'make_dottable_dict(${1:dict})'
 
+  'mag_dry':
+    'prefix': 'mag_dry'
+    'body': 'mag_dry(${1:head}, ${2:ref}, ${3:duration}, ${4:new_tip=False}, ${5:new_instruction=False})'
+
+  'mag_incubate':
+    'prefix': 'mag_incubate'
+    'body': 'mag_incubate(${1:head}, ${2:ref}, ${3:duration}, ${4:magnetize=False}, ${5:tip_position=1.5}, ${6:temperature=None}, ${7:new_tip=False}, ${8:new_instruction=False})'
+
+  'mag_collect':
+    'prefix': 'mag_collect'
+    'body': 'mag_collect(${1:head}, ${2:ref}, ${3:cycles}, ${4:pause_duration}, ${5:bottom_position=0.0}, ${6:temperature=None}, ${7:new_tip=False}, ${8:new_instruction=False})'
+
+  'mag_release':
+    'prefix': 'mag_release'
+    'body': 'mag_release(${1:head}, ${2:ref}, ${3:duration}, ${4:frequency}, ${5:center=0.5}, ${6:amplitude=0.5}, ${7:temperature=None}, ${8:new_tip=False}, ${9:new_instruction=False})'
+
+  'mag_mix':
+    'prefix': 'mag_mix'
+    'body': 'mag_mix(${1:head}, ${2:ref}, ${3:duration}, ${4:frequency}, ${5:center=0.5}, ${6:amplitude=0.5}, ${7:magnetize=False}, ${8:temperature=None}, ${9:new_tip=False}, ${10:new_instruction=False})'
+
   'mix':
     'prefix': 'mix'
     'body': 'mix(${1:well}, ${2:volume}, speed="${3:100:microliter/second}", repetitions=${4:10})'
 
   'oligosynthesize':
     'prefix': 'oligosynthesize'
-    'body': 'oligosynthesize([{"sequence":${1:"CATGGTCCCCTGCACAGG"}, 
-      "destination":${2:oligo_1.well(0)}, 
-      "scale":${3:"25nm"}, 
+    'body': 'oligosynthesize([{"sequence":${1:"CATGGTCCCCTGCACAGG"},
+      "destination":${2:oligo_1.well(0)},
+      "scale":${3:"25nm"},
       "purification":${4:"standard"}])'
-      
-  'plate_off_mag_adapter':
-    'prefix': 'plate_off_mag_adapter'
-    'body': 'plate_off_mag_adapter(${1:ref})'
-
-  'plate_to_mag_adapter':
-    'prefix': 'plate_to_mag_adapter'
-    'body': 'plate_to_mag_adapter(${1:ref}, ${2:duration})'
 
   'provision':
     'prefix': 'provision'
