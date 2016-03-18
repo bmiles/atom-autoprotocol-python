@@ -13,7 +13,7 @@ Or, Settings → Install → Search for `autoprotocol-python`
 
 ## Snippets
 
-Included are some [snippets](snippets/atom-autoprotocol-python.json) useful for writing autoprotocol-python.
+Included are some [snippets](snippets/atom-autoprotocol-python.cson) useful for writing autoprotocol-python.
 
 Start writing a snippet's `prefix` and then press <kbd>Tab ↹</kbd> to expand the snippet.
 
